@@ -9,7 +9,7 @@ const items = [
     id: 1,
     color: "from-green-300 to-blue-300",
     title: "Room for Rent System",
-    desc: "The Room for Rent System is a web application built with Next.js. It provides features like room listings, booking management, payment tracking, and service requests. With an admin dashboard, owners can oversee bookings, generate invoices, and send notifications, while tenants can view their rental details, request services, and track payment history. Built on modern technologies like Next.js, MongoDB, and Tailwind CSS, the system is fast, secure, and optimized for both desktop and mobile users.",
+    desc: "With an admin dashboard, owners can oversee bookings, generate invoices, and send notifications, while tenants can view their rental details, request services, and track payment history. Built on modern technologies like Next.js, MongoDB, and Tailwind CSS, the system is fast, secure, and optimized for both desktop and mobile users.",
     img: "/images/project1.png",
     link: "https://main.d1r1l4g50q0t4w.amplifyapp.com/",
   },
@@ -71,7 +71,7 @@ export const Portfolio = () => {
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[800px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[800px]">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
@@ -83,7 +83,7 @@ export const Portfolio = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      {/* <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg
@@ -104,14 +104,9 @@ export const Portfolio = () => {
               </textPath>
             </text>
           </motion.svg>
-          <Link
-            href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
-          >
-            Hire Me
-          </Link>
+
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

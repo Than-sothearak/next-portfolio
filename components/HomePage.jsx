@@ -4,8 +4,8 @@ import React from "react";
 
 export const HomePage = () => {
   return (
-    <section className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-      <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+    <section className="h-full flex flex-col lg:flex-row">
+      <div className="h-1/2 lg:h-full lg:w-1/2 relative bottom-0">
         <Image src="/mypic.png" alt="" fill className="object-contain" />
       </div>
       {/* TEXT CONTAINER */}
@@ -32,7 +32,13 @@ export const HomePage = () => {
           >
             View My Work
           </button>
-          <button className="p-4 rounded-lg ring-1 ring-black">
+              <button
+            className="p-4 rounded-lg ring-1 ring-black  text-black"
+            onClick={() => {
+              const section = document.getElementById("Contact");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Contact Me
           </button>
         </div>

@@ -1,22 +1,22 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
-import { FaInstagram, FaFacebook, FaGithub, FaTelegram } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
+import Social from "./Social";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [pathName, setPathName] = useState("#HomePage");
 
-
   const links = [
     { url: "#HomePage", title: "Home" },
     { url: "#About", title: "About" },
-   
+
     { url: "#Portfolio", title: "Portfolio" },
-     { url: "#Contact", title: "Contact" },
+    { url: "#Contact", title: "Contact" },
   ];
 
   const listVariants = {
@@ -53,20 +53,9 @@ const Navbar = () => {
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       {/* LOGO */}
-      <div className="hidden md:flex gap-4 text-2xl">
-        <Link href={"https://www.facebook.com/Sothearak.gmail/"}>
-          <FaFacebook />
-        </Link>
-        <Link href={"https://www.instagram.com/than_sothearak/"}>
-          <FaInstagram />
-        </Link>
-        <Link href={"https://github.com/Than-sothearak"}>
-          <FaGithub />
-        </Link>
-        <Link href={""}>
-          <FaTelegram />
-        </Link>
-      </div>
+     <div className="max-sm:hidden">
+       <Social />
+     </div>
       {/* MANIN LOGO */}
       <div>
         <Link
