@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
@@ -22,7 +23,13 @@ export const HomePage = () => {
         </p>
         {/* BUTTONS */}
         <div className="w-full flex gap-4">
-          <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+          <button
+            className="p-4 rounded-lg ring-1 ring-black bg-black text-white"
+            onClick={() => {
+              const section = document.getElementById("Portfolio");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             View My Work
           </button>
           <button className="p-4 rounded-lg ring-1 ring-black">

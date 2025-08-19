@@ -14,8 +14,9 @@ const Navbar = () => {
   const links = [
     { url: "#HomePage", title: "Home" },
     { url: "#About", title: "About" },
-    { url: "#Contact", title: "Contact" },
+   
     { url: "#Portfolio", title: "Portfolio" },
+     { url: "#Contact", title: "Contact" },
   ];
 
   const listVariants = {

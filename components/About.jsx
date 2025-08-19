@@ -425,7 +425,7 @@ export const About = () => {
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-24 z-30 xl:w-1/2">
-          <Brain scrollYProgress={scrollYProgress} />
+          <Image src="/mypic2.png" alt="" fill className="object-contain" />
         </div>
       </div>
     </div>
