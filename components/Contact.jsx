@@ -41,8 +41,8 @@ export const Contact = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-    <div className="lg:h-screen h-full">
-        <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="lg:h-screen h-full max-lg:mt-10 z-10">
+        <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 gap-8">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col items-center justify-center text-6xl gap-8 max-sm:gap-2">
           <div>
@@ -70,7 +70,7 @@ export const Contact = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-slate-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-slate-50 rounded-xl text-xl flex flex-col gap-8 justify-center xl:p-24 md:p-8 p-4"
         >
           <span>Dear Sothearak,</span>
           <textarea

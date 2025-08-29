@@ -71,7 +71,7 @@ export function Portfolio() {
   return (
     <div className="h-screen flex items-center justify-center bg-black/5   ">
       
-      <div className="container max-md:w-full px-20 flex flex-col relative">
+      <div className="container max-md:w-full lg:px-20  flex flex-col relative">
         {/* Title */}
  
        <h2 className="text-4xl font-bold text-center mb-12">
@@ -96,7 +96,7 @@ export function Portfolio() {
         </button>
           <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-scroll scroll-smooth no-scrollbar"
+          className="z-10 flex gap-6 overflow-x-scroll scroll-smooth no-scrollbar"
         >
           {items.map((item) => (
             <div
