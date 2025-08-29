@@ -15,10 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-green-100 z">
-              <section className="h-24 z-50 w-screen relative">
+          <section className="md:fixed top-0 h-24 z-50 w-screen bg-gradient-to-b from-white to-transparent">
             <Navbar />
           </section>
-    
+
           <div className="h-[calc(100vh-6rem)]">{children}</div>
         </div>
       </body>

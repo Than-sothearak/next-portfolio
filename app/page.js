@@ -2,6 +2,7 @@ import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { HomePage } from "@/components/HomePage";
 import { Portfolio } from "@/components/Portfolio";
+import ProjectsSection from "@/components/Project";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       </section>
       <section id="Portfolio">
         <Portfolio />
+        {/* <ProjectsSection /> */}
       </section>
       <section id="Contact">
         <Contact />

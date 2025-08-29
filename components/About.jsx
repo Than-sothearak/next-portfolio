@@ -18,7 +18,7 @@ import {
 export const About = () => {
   const containerRef = useRef();
 
-  const { scrollYProgress } = useScroll({ container: containerRef });
+  const { scrollYProgress } = useScroll();
 
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});
