@@ -27,7 +27,7 @@ export const About = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
   return (
-    <div className="w-screen h-screen flex items-center justify-center ">
+    <div className="w-screen h-screen flex items-center justify-center max-md:h-full">
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
