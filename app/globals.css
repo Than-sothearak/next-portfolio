@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add custom styles for scroll snap */
+/* Default scroll snap for desktop */
 html {
-    scroll-snap-type: y mandatory;
-  }
-  
-  section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
-  /* Hide scrollbar but keep scroll working */
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Hide scrollbar but keep scroll working */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Disable scroll snap on small screens (mobile) */
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  section {
+    scroll-snap-align: auto;
+    scroll-snap-stop: normal;
+  }
 }
