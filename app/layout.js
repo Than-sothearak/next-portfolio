@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { FaArrowUp } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
 
           <div className="h-[calc(100vh-6rem)]">{children}</div>
         </div>
+        <Analytics />
       </body>
     </html>
   );
