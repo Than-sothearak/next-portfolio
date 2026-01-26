@@ -20,7 +20,7 @@ const scrollRef = useRef(null);
     {
       title: "Room for Rent System",
       desc: "Booking, invoices, Telegram bot integration.",
-      image: "/projects/room.png",
+      image: "/computer_banner.jpg",
       link: "#",
       tech: ["Next.js", "MongoDB", "Tailwind"],
     },
@@ -87,7 +87,7 @@ const scrollRef = useRef(null);
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-center mb-12">
-          My <span className="text-blue-600">Projects</span>
+          My <span className="text-blue-600">Projectssd</span>
         </h2>
 
         {/* Scroll Buttons */}

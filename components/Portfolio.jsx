@@ -10,19 +10,27 @@ const items = [
     color: "from-green-300 to-blue-300",
     title: "Room for Rent System",
     desc: "With an admin dashboard, owners can oversee bookings, generate invoices, and send notifications, while tenants can view their rental details, request services, and track payment history. Built on modern technologies like Next.js, MongoDB, and Tailwind CSS, the system is fast, secure, and optimized for both desktop and mobile users.",
-    img: "/images/project1.png",
+    img: "/images/Slide1.JPG",
     link: "https://main.d1r1l4g50q0t4w.amplifyapp.com/",
   },
-  {
+    {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Computer Shop",
-    desc: "This Computer Shop project is a full-stack e-commerce web application built with Next.js. It offers fast and SEO-friendly product browsing, a smooth shopping cart and checkout flow, and a powerful admin dashboard to manage stock, users, and orders.",
-    img: "/images/project2.png",
-    link: "https://ecommerce-front-two-nu.vercel.app/",
+    title: "Next.js Moto Shop",
+    desc: "Motoshop is a modern web design and development project created to help computer and electronics businesses build a strong, professional online presence. The project focuses on clean design, fast performance, and practical features that support real business needs.",
+    img: "/images/MotoShop.jpg",
+    link: "https://ecommercemotogear.vercel.app/",
   },
   {
     id: 3,
+    color: "from-blue-300 to-violet-300",
+    title: "Next.js Computer Shop",
+    desc: "This Computer Shop project is a full-stack e-commerce web application built with Next.js. It offers fast and SEO-friendly product browsing, a smooth shopping cart and checkout flow, and a powerful admin dashboard to manage stock, users, and orders.",
+    img: "/images/computer_banner.jpg",
+    link: "https://ecommerce-front-two-nu.vercel.app/",
+  },
+  {
+    id: 4,
     color: "from-violet-300 to-purple-300",
     title: "Movie App",
     desc: "A Movie App built with Next.js and Tailwind CSS that lets users explore trending movies, view details, and search for their favorite films.",
@@ -30,7 +38,7 @@ const items = [
     link: "https://next-movie-beta-one.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     color: "from-purple-300 to-red-300",
     title: "Design Work",
     desc: "Creative designer specializing in graphic design and web design. I create engaging visuals, posters, and modern websites that solve real problems.",
@@ -104,14 +112,14 @@ export function Portfolio() {
               className={`border p-4 bg-gradient-to-r ${item.color} flex-shrink-0 lg:basis-1/3 md:basis-1/2 basis-full rounded-2xl transition overflow-hidden flex flex-col`}
             >
               {/* Image */}
-              <div className="relative w-full h-48 rounded-full">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  className="object-cover rounded-md"
-                />
-              </div>
+           <div className="relative w-full aspect-[16/9] rounded-md">
+  <Image
+    src={item.img}
+    alt={item.title}
+    fill
+    className="object-cover rounded-md"
+  />
+</div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow text-white">
