@@ -1,5 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💼 Personal Portfolio — Next.js
 
+A modern and responsive **personal portfolio website** built with **Next.js, React, Tailwind CSS, and Framer Motion**. The website showcases my profile, skills, projects, experience, and provides a contact section for communication.
+
+The project was built to improve my skills in **modern React and Next.js development**, responsive UI design, animations, reusable components, and frontend user interactions.
+
+## ✨ Features
+
+- 👤 Personal introduction and profile
+- 🛠️ Skills and technologies showcase
+- 💼 Projects portfolio
+- 📄 About and experience sections
+- 📱 Fully responsive design
+- 🎨 Modern UI with Tailwind CSS
+- ✨ Smooth animations with Framer Motion
+- 🧭 Smooth section navigation with React Scroll
+- 📧 Contact form with EmailJS
+- 🔗 Social and external links
+- 🧩 Reusable React components
+
+## 🛠️ Tech Stack
+
+- **Next.js 14**
+- **React 18**
+- **JavaScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **React Icons**
+- **React Scroll**
+- **EmailJS**
+
+## 📧 Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
 ## Getting Started
 
 First, run the development server:
